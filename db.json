@@ -1,0 +1,25 @@
+{
+  "expenses": [
+    {
+      "id": "1",
+      "amount": 42.5,
+      "category": "Food",
+      "date": "2026-09-01",
+      "note": "Groceries"
+    },
+    {
+      "id": "2",
+      "amount": 15,
+      "category": "Transport",
+      "date": "2026-09-03",
+      "note": "Bus pass"
+    },
+    {
+      "amount": 5,
+      "category": "Shopping",
+      "date": "2026-07-05",
+      "id": "2g1oznGS4pM"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
