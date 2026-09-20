@@ -20,8 +20,7 @@ export class AppComponent implements OnInit {
   private expenseService = inject(ExpenseService);
 
   ngOnInit(): void {
-    // Load expense data once at startup so it's available app-wide
-    // (list page, running totals, and the chatbot all share this signal).
+
     this.expenseService.fetchExpenses();
   }
 }

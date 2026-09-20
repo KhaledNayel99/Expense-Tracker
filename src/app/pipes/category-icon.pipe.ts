@@ -10,10 +10,7 @@ const ICONS: Record<ExpenseCategory, string> = {
   Other: '📦'
 };
 
-/**
- * Custom pipe: prefixes a category name with a matching emoji.
- * e.g. 'Food' -> '🍔 Food'
- */
+
 @Pipe({
   name: 'categoryIcon',
   standalone: true

@@ -18,7 +18,7 @@ export class ExpenseService {
     this.error.set(null);
     this.http.get<Expense[]>(API_URL).subscribe({
       next: (data) => {
-        // json-server sometimes returns ids/amounts as strings — normalize them.
+
         this.expenses.set(
           data.map((e) => ({ ...e, id: Number(e.id), amount: Number(e.amount) }))
         );

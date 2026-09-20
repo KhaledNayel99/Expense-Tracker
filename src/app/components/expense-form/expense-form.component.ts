@@ -11,7 +11,7 @@ import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { ExpenseService } from '../../services/expense.service';
 import { EXPENSE_CATEGORIES, Expense } from '../../models/expense.model';
 
-/** Custom validator: the date control cannot be set to a future date. */
+
 function noFutureDateValidator(control: AbstractControl): ValidationErrors | null {
   if (!control.value) return null;
   const today = new Date();
@@ -149,7 +149,7 @@ export class ExpenseFormComponent implements OnInit {
       date: raw.date,
       note: raw.note || undefined
     };
-
+    
     const id = this.editingId();
     const request$ =
       id !== null ? this.expenseService.updateExpense(id, payload) : this.expenseService.addExpense(payload);

@@ -19,6 +19,6 @@ export interface Expense {
   id: number;
   amount: number;
   category: ExpenseCategory;
-  date: string; // ISO date string, e.g. "2026-08-10"
+  date: string;
   note?: string;
 }

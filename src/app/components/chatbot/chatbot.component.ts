@@ -8,11 +8,7 @@ interface ChatMessage {
   text: string;
 }
 
-/**
- * Standalone, reusable chatbot widget. Deliberately independent from the
- * expense form / list components — it only talks to ExpenseService (via
- * AiChatbotService) to read data, never to mutate it.
- */
+
 @Component({
   selector: 'app-chatbot',
   standalone: true,

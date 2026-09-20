@@ -2,16 +2,7 @@ import { Injectable, inject } from '@angular/core';
 import { ExpenseService } from './expense.service';
 import { Expense, EXPENSE_CATEGORIES } from '../models/expense.model';
 
-/**
- * A small, self-contained "AI agent" for the chatbot.
- *
- * It doesn't call any external AI API (no key is configured for this student
- * project) — instead it parses the user's natural-language question with a
- * handful of intent patterns and answers using the *live* expense data from
- * ExpenseService. This keeps the chatbot fully functional out of the box,
- * while still exercising the required UX (message history, loading state,
- * user vs. AI distinction, Enter-to-send).
- */
+
 @Injectable({ providedIn: 'root' })
 export class AiChatbotService {
   private expenseService = inject(ExpenseService);

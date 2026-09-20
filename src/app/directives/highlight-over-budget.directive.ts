@@ -1,15 +1,6 @@
 import { Directive, ElementRef, Input, OnChanges, inject } from '@angular/core';
 
-/**
- * Custom attribute directive: [appHighlightOverBudget]
- *
- * Usage:
- *   <tr [appHighlightOverBudget]="expense.amount" [threshold]="100">
- *
- * If the bound amount exceeds the threshold (default 100), the host element
- * gets a light red/orange background to visually flag it as an over-budget
- * expense. Otherwise the background is left unchanged.
- */
+
 @Directive({
   selector: '[appHighlightOverBudget]',
   standalone: true
